@@ -1,0 +1,566 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/*
+    header
+ */
+header {
+    height: 60px;
+    line-height: 60px;
+    padding: 3px;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+header .logo i {
+    color: #E74F4D;
+    transform: translateY(5px);
+}
+
+header nav {
+    position: absolute;
+    right: 0;
+    padding-right: 40px;
+}
+
+header::after {
+    content: ".";
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    display: block;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul::after {
+    content: ".";
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    display: block;
+}
+
+header nav ul li {
+    float: left;
+    margin-left: 10px;
+}
+
+header nav ul li:hover {
+    border-bottom: 3px solid #E74F4D;
+}
+
+header nav ul li a {
+    padding: 10px;
+}
+
+header nav ul li a:link,
+header nav ul li a:visited,
+header nav ul li a:hover,
+header nav ul li a:active {
+    color: #999;
+    text-decoration: none;
+}
+
+header nav ul li.active {
+    color: #E74F4D;
+    border-bottom: 3px solid #E74F4D;
+}
+
+header nav ul li.active a {
+    color: #E74F4D;
+}
+
+header nav ul li:last-child a {
+    color: #E74F4D;
+}
+
+/*
+    banner
+ */
+#banner {
+    background: url("https://unsplash.it/1066/600?blur") no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+#banner .slogan {
+    position: absolute;
+    top: 180px;
+    left: 140px;
+}
+
+#banner .slogan p:first-child {
+    font-size: 50px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+#banner .slogan p:last-of-type {
+    font-size: 18px;
+    color: #fff;
+    margin: 10px 0 50px 0;
+    width: 280px;
+    line-height: 1.6;
+}
+
+#banner .slogan a {
+    display: block;
+    height: 55px;
+    width: 290px;
+    background-color: #E74F4D;
+    font-size: 26px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    line-height: 55px;
+}
+
+/*
+    content
+ */
+#content .concept div {
+    float: left;
+    width: calc(100%/4);
+    padding: 50px 0 10px 0;
+    text-align: center;
+}
+
+#content .concept::after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+#content .concept div i {
+    color: #E74F4D;
+}
+
+#content .concept div p {
+    color: #999;
+    padding: 0 70px;
+    margin: 50px 0;
+    border-right: 2px solid #999;
+}
+
+#content .dontknow {
+    text-align: center;
+    background-color: #ddd;
+    padding: 60px;
+}
+
+#content .dontknow i {
+    color: #E74F4D;
+}
+
+#content .dontknow p {
+    color: #999;
+    margin: 30px 0 0 0;
+    font-size: 50px;
+}
+
+#content .search {
+    height: 300px;
+    background: url("https://unsplash.it/985/500?blur") no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    text-align: center;
+}
+
+#content .search p {
+    color: #fff;
+}
+
+#content .search p:first-of-type {
+    font-size: 26px;
+}
+
+#content .search p:first-of-type span {
+    border-bottom: 3px solid #fff;
+    padding-bottom: 8px;
+}
+
+#content .search p:last-of-type {
+    margin-bottom: 50px;
+}
+
+#content .search select {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #E74F4D;
+    color: #999;
+}
+
+#content .search select option {
+    background-color: #eee;
+    color: #999;
+}
+
+#content .search input {
+    width: 200px;
+    height: 30px;
+    background-color: #E74F4D;
+    border: 1px solid #E74F4D;
+    color: #fff;
+    cursor: pointer;
+}
+
+#content .activities {
+    background-color: #eee;
+    padding: 100px;
+}
+
+#content .activities div {
+    float: left;
+    width: calc(100%/4);
+    text-align: center;
+}
+
+#content .activities::after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+#content .activities img {
+    border-width: 10px 7px 10px 7px;
+    border-color: #fff;
+    border-style: solid;
+    box-shadow: 0 0 4px #999;
+}
+
+#content .activities div p:last-of-type {
+    color: #999;
+    font-size: 0.9em;
+}
+
+#content .activities div p {
+    margin: 5px;
+}
+
+#content .item1::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#content .item1 .item1-left {
+    background: url("https://unsplash.it/1200/500") no-repeat;
+    height: 400px;
+    width: calc(100%*2/3);
+    position: relative;
+    text-align: center;
+    padding: 50px;
+    float: left;
+    box-sizing: border-box;
+}
+
+#content .item1 .item1-left p {
+    color: #fff;
+    margin: 10px;
+}
+
+#content .item1 .item1-left p:first-of-type {
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: -40px;
+}
+
+#content .item1 .item1-left p:nth-of-type(2) {
+    font-size: 125px;
+}
+
+#content .item1 .item1-left::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    right: -15px;
+    bottom: 200px;
+    transform: rotate(45deg);
+}
+
+#content .item1 .item1-content {
+    float: left;
+    padding: 50px;
+    width: calc(100%/3);
+    box-sizing: border-box;
+    height: 400px;
+    text-align: center;
+}
+
+#content .item1 .item1-content h5 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+#content .item1 .item1-content h5 span {
+    color: #E74F4D;
+}
+
+#content .item1 .item1-content p {
+    color: #999;
+    text-align: left;
+    margin-bottom: 70px;
+}
+
+#content .item1 .item1-content a {
+    color: #E74F4D;
+    border: 1px solid #E74F4D;
+    padding: 8px 22px;
+    text-decoration: none;
+}
+
+#content .items div {
+    float: left;
+    width: 33.33%;
+    height: 400px;
+    text-align: center;
+}
+
+#content .items::after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+#content .items .items-1 {
+    background-color: #E74F4D;
+}
+
+#content .items .items-1 p {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+#content .items .items-1 p:first-of-type {
+    margin-top: 100px;
+}
+
+#content .items .items-1 p:last-of-type {
+    margin-bottom: 60px;
+}
+
+#content .items .items-1 p span {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fff;
+}
+
+#content .items .items-1 a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 30px 5px 30px;
+}
+
+#content .items .items-2 p {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+#content .items .items-2 p:first-of-type {
+    margin-top: 100px;
+}
+
+#content .items .items-2 p:last-of-type {
+    margin-bottom: 60px;
+}
+
+#content .items .items-2 p span {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000;
+}
+
+#content .items .items-2 a {
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    padding: 5px 30px 5px 30px;
+}
+
+#content .items .items-3 {
+    background: url("https://unsplash.it/550/400") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#content .items .items-3::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    left: -15px;
+    bottom: 180px;
+    transform: rotate(45deg);
+}
+
+#content .volunteer .title {
+    text-align: center;
+    color: #999;
+    padding: 100px;
+}
+
+#content .volunteer .title p:first-of-type {
+    color: #000;
+    font-size: 1.2em;
+}
+
+#content .volunteer .title p:last-of-type {
+    padding: 0 360px;
+}
+
+#content .volunteer .title p span {
+    border-bottom: 2px solid #E74F4D;
+    padding-bottom: 5px;
+}
+
+#content .volunteer .form {
+    padding: 0 150px 100px 150px;
+}
+
+#content .volunteer .form .left {
+    width: 33.33%;
+    float: left;
+    color: #999;
+}
+
+#content .volunteer .form .left p {
+    padding-bottom: 20px;
+    position: relative;
+}
+
+#content .volunteer .form .left p::after {
+    content: "▼ more";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: .8em;
+}
+
+#content .volunteer .form form {
+    float: left;
+    width: 66.66%;
+    box-sizing: border-box;
+    padding-left: 100px;
+}
+
+#content .volunteer .form::after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+#content .volunteer .form form input {
+    width: 300px;
+    padding: 15px 20px;
+    margin: 6px;
+    background-color: #eee;
+    border: none;
+}
+
+#content .volunteer .form form textarea {
+    margin: 6px;
+    padding: 10px 20px;
+    background-color: #eee;
+    border: none;
+    width: 696px;
+    box-sizing: border-box;
+}
+
+#content .volunteer .form form button {
+    height: 35px;
+    width: 696px;
+    background-color: #eee;
+    margin-left: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+#content .connection {
+    background-color: #32353E;
+    color: #fff;
+    text-align: center;
+    padding: 80px;
+}
+
+#content .connection p {
+    padding: 0 300px;
+}
+
+#content .connection input {
+    width: 400px;
+    height: 20px;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+
+#content .connection button {
+    width: 60px;
+    height: 34px;
+    background-color: #6F7178;
+    color: #fff;
+    border: none;
+    margin-left: -5px;
+    cursor: pointer
+}
+
+#content .connection .social {
+    padding: 50px;
+}
+
+#content .connection .social a {
+    color: inherit;
+    margin-left: 20px;
+}
+
+/*
+    footer
+ */
+
+#footer {
+    background-color: #2F2F38;
+    position: relative;
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+}
+
+#footer .copyright {
+    position: absolute;
+    left: 100px;
+}
+
+#footer .top {
+    position: absolute;
+    right: 100px;
+}
+
+#footer .top a {
+    color: #fff;
+    text-decoration: none;
+}
