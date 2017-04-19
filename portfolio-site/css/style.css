@@ -1,0 +1,233 @@
+html {
+    font-family: '微软雅黑';
+}
+header.navbar {
+    background-color: rgb(114,40,114);
+    height: 80px;
+    line-height: 80px;
+    box-shadow: 0 0px 4px 3px rgba(0, 0, 0, 0.4);
+    margin-bottom: 0;
+}
+header.navbar a {
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.nav li a:hover {
+    color: #aaa;
+    box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+}
+.nav li a.on {
+    background-color: #fff;
+    color: #000;
+}
+.navbar-brand {
+    padding-top: 16px;
+}
+.navbar-brand img {
+    height: 50px;
+}
+header.navbar li {
+    height: 80px;
+    line-height: 80px;
+}
+.navbar-collapse.collapse.in {
+    background-color: rgb(95,95,95);
+    border-top: 0;
+    margin-top: 20px;
+}
+.navbar-collapse.collapse.in ul {
+    margin: 0;
+}
+.navbar-collapse.collapse.in li {
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+}
+button.navbar-toggle {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+    height: 40px;
+    border: 1px solid white;
+    transition: .2s;
+    transition-timing-function: linear;
+}
+button.navbar-toggle:hover {
+    background-color: grey;
+}
+button.navbar-toggle span {
+    margin-top: -2px;
+    display: block;
+    font-size: 20px;
+}
+main {
+    margin-top: 80px;
+    background-color: rgb(83,83,83);
+}
+#about {
+    background-color: rgb(136,136,136);
+    padding: 66px 30px;
+}
+#about .desc {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    padding: 40px 40px 0 40px;
+    float: right;
+    width: 70%;
+}
+#about i {
+    color: white;
+    font-size: 35px;
+}
+#about hr {
+    width: 600px;
+    border-top: 5px solid white;
+    display: inline-block;
+    margin-top: 15px;
+}
+#about .portrait {
+    width: 30%;
+    float: right;
+    text-align: center;
+    border-left: 2px solid #fff;
+}
+@media all and (max-width: 626px) {
+    #about .portrait {
+        float: none;
+        width: 100%;
+        border: none;
+    }
+    #about .desc {
+        float: none;
+        width: 100%;
+    }
+}
+#about .portrait img {
+    width: 160px;
+}
+#portfolio {
+    background-color: rgb(238,238,238);
+    padding: 66px 30px;
+}
+#portfolio div[class*="col-"]{
+    padding: 8px;
+}
+#portfolio .item {
+    width: 300px;
+    height: 360px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+#portfolio .item:hover {
+    -webkit-box-shadow: 0 0 4px #888;
+    box-shadow: 0 0 20px -3px #888;
+}
+#portfolio .item a:link,
+#portfolio .item a:hover,
+#portfolio .item a:visited,
+#portfolio .item a:active {
+    display: block;
+    padding: 1px 0;
+    text-decoration: none;
+}
+#portfolio .item-wrapper {
+    width: 290px;
+    height: 290px;
+    margin: 10px auto 10px;
+    overflow: hidden;
+}
+#portfolio .item:hover .item-pic {
+    transform: scale(1.5);
+}
+#portfolio .item-pic {
+    transition: all 0.3s ease;
+}
+#portfolio .item-pic-1 {
+    width: 290px;
+    height: 290px;
+    background: url(../img/proj1.png) 0 0 / 290px 290px no-repeat;
+    margin: 10px auto 10px;
+}
+#portfolio .item-pic-2 {
+    width: 290px;
+    height: 290px;
+    background: url(../img/proj2.png) 0 0 / 290px 290px no-repeat;
+    margin: 10px auto 10px;
+}
+#portfolio .item-content {
+    color: #000;
+    text-align: left;
+    width: 290px;
+    margin: 0 auto;
+    padding: 5px;
+    border-top: 1px solid #ddd;
+}
+#contact {
+    background-color: rgb(238,238,238);
+    padding: 66px 30px;
+    border-top: 1px solid #aaa;
+}
+#contact .connection p {
+    color: #666;
+    font-size: 2em;
+    margin: 20px;
+    border-bottom: 1px solid #999;
+}
+#contact .social {
+    text-align: center;
+    margin-top: 30px;
+}
+#contact .social a {
+    color: #000;
+    margin-left: 20px;
+}
+.col-md-6 {
+    text-align: center;
+}
+.clearfix::after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+footer {
+    height: 60px;
+    background-color: #333;
+    line-height: 60px;
+}
+footer .container {
+    color: #fff;
+    font-size: 1.2em;
+}
+footer .container p {
+    margin: 0;
+}
+#back-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    right: 60px;
+    bottom: 20px;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 3px #000;
+    display: none;
+}
+#back-to-top a:link,
+#back-to-top a:hover,
+#back-to-top a:visited,
+#back-to-top a:active {
+    color: #fff;
+    text-decoration: none;
+}

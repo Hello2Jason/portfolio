@@ -1,8 +1,20 @@
+/*
+    initial
+ */
 body {
     padding: 0;
     margin: 0;
 }
-
+/*
+    clearfix
+ */
+.clearfix::after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
 /*
     header
  */
@@ -30,26 +42,10 @@ header nav {
     padding-right: 40px;
 }
 
-header::after {
-    content: ".";
-    clear: both;
-    visibility: hidden;
-    height: 0;
-    display: block;
-}
-
 header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-header nav ul::after {
-    content: ".";
-    clear: both;
-    visibility: hidden;
-    height: 0;
-    display: block;
 }
 
 header nav ul li {
@@ -84,6 +80,12 @@ header nav ul li.active a {
 
 header nav ul li:last-child a {
     color: #E74F4D;
+}
+
+main,
+header,
+footer {
+    min-width: 1280px;
 }
 
 /*
@@ -136,14 +138,6 @@ header nav ul li:last-child a {
     width: calc(100%/4);
     padding: 50px 0 10px 0;
     text-align: center;
-}
-
-#content .concept::after {
-    content: ".";
-    display: block;
-    height: 0;
-    visibility: hidden;
-    clear: both;
 }
 
 #content .concept div i {
@@ -230,14 +224,6 @@ header nav ul li:last-child a {
     text-align: center;
 }
 
-#content .activities::after {
-    content: ".";
-    display: block;
-    height: 0;
-    visibility: hidden;
-    clear: both;
-}
-
 #content .activities img {
     border-width: 10px 7px 10px 7px;
     border-color: #fff;
@@ -252,14 +238,6 @@ header nav ul li:last-child a {
 
 #content .activities div p {
     margin: 5px;
-}
-
-#content .item1::after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
 }
 
 #content .item1 .item1-left {
@@ -335,14 +313,6 @@ header nav ul li:last-child a {
     width: 33.33%;
     height: 400px;
     text-align: center;
-}
-
-#content .items::after {
-    content: ".";
-    display: block;
-    clear: both;
-    height: 0;
-    visibility: hidden;
 }
 
 #content .items .items-1 {
@@ -467,20 +437,13 @@ header nav ul li:last-child a {
     padding-left: 100px;
 }
 
-#content .volunteer .form::after {
-    content: ".";
-    display: block;
-    clear: both;
-    height: 0;
-    visibility: hidden;
-}
-
 #content .volunteer .form form input {
-    width: 300px;
+    width: 46%;
     padding: 15px 20px;
     margin: 6px;
     background-color: #eee;
     border: none;
+    box-sizing: border-box;
 }
 
 #content .volunteer .form form textarea {
@@ -488,13 +451,13 @@ header nav ul li:last-child a {
     padding: 10px 20px;
     background-color: #eee;
     border: none;
-    width: 696px;
+    width: 96%;
     box-sizing: border-box;
 }
 
 #content .volunteer .form form button {
     height: 35px;
-    width: 696px;
+    width: 96%;
     background-color: #eee;
     margin-left: 6px;
     border: none;
