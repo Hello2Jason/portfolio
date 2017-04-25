@@ -92,7 +92,7 @@ footer {
     banner
  */
 #banner {
-    background: url("https://unsplash.it/1066/600?blur") no-repeat;
+    background: url("../img/600.jpg") no-repeat;
     background-size: cover;
     height: 600px;
     position: relative;
@@ -169,7 +169,7 @@ footer {
 
 #content .search {
     height: 300px;
-    background: url("https://unsplash.it/985/500?blur") no-repeat;
+    background: url("../img/502.jpg") no-repeat;
     background-size: cover;
     padding-top: 60px;
     text-align: center;
@@ -241,7 +241,7 @@ footer {
 }
 
 #content .item1 .item1-left {
-    background: url("https://unsplash.it/1200/500") no-repeat;
+    background: url("../img/500.jpg") no-repeat;
     height: 400px;
     width: calc(100%*2/3);
     position: relative;
@@ -371,7 +371,7 @@ footer {
 }
 
 #content .items .items-3 {
-    background: url("https://unsplash.it/550/400") no-repeat;
+    background: url("../img/400.jpg") no-repeat;
     background-size: cover;
     position: relative;
 }
