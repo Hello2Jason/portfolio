@@ -119,14 +119,15 @@ main {
 }
 #portfolio .item {
     width: 300px;
-    height: 360px;
     background-color: #fff;
     margin: 0 auto;
     border-radius: 5px;
+    -webkit-box-shadow: 0 0 20px -2px #888;
+    box-shadow: 0 0 20px -2px #888;
 }
 #portfolio .item:hover {
-    -webkit-box-shadow: 0 0 4px #888;
-    box-shadow: 0 0 20px -3px #888;
+    -webkit-box-shadow: 0 0 40px -2px #888;
+    box-shadow: 0 0 40px -2px #888;
 }
 #portfolio .item a:link,
 #portfolio .item a:hover,
@@ -160,12 +161,18 @@ main {
     background: url(../img/proj2.png) 0 0 / 290px 290px no-repeat;
     margin: 10px auto 10px;
 }
+#portfolio .item-pic-3 {
+    width: 290px;
+    height: 290px;
+    background: url(../img/proj3.png) 0 0 / 290px 250px no-repeat;
+    margin: 10px auto 10px;
+}
 #portfolio .item-content {
-    color: #000;
+    color: #666;
     text-align: left;
     width: 290px;
     margin: 0 auto;
-    padding: 5px;
+    padding: 10px;
     border-top: 1px solid #ddd;
 }
 #contact {
@@ -214,7 +221,7 @@ footer .container p {
     width: 50px;
     height: 50px;
     background-color: #000;
-    right: 60px;
+    right: 20px;
     bottom: 20px;
     color: white;
     line-height: 50px;
@@ -230,4 +237,5 @@ footer .container p {
 #back-to-top a:active {
     color: #fff;
     text-decoration: none;
+    padding: 10px;
 }
